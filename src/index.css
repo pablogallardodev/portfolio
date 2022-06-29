@@ -27,14 +27,23 @@ code {
 .container {
   align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background: linear-gradient(90deg, #FFECD2, #FDB8A1);
+  align-items: center;
+  display: flex;
   min-height: 100vh;
-  justify-content: space-around;
+  min-width: 100%;
+  justify-content: space-evenly;
 }
 
 .name {
   color: #ffc120;
   font-size: 2.3rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .title {
@@ -48,8 +57,8 @@ code {
   box-shadow: 0 0 .5rem #00000055;
   color: white;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 300;
   padding: .5rem 1rem;
   margin: .5rem 0;
   transition: all .3s ease-in-out;
@@ -64,4 +73,20 @@ code {
 
 .redes img:hover, .cv:hover {
   transform: translateY(-3px) translateX(3px);
+}
+
+.about-me {
+  background: linear-gradient(90deg, #ADCCEF, #E7F0FD);
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem #00000044;
+  margin: .5rem;
+  max-width: 1000px;
+  padding: .5rem;
+  text-align: center;
+}
+
+.about-me > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: .5rem 0;
 }
