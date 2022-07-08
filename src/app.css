@@ -1,0 +1,36 @@
+:root {
+  --back-color: #f1f5f9;
+  --black-color: #111;
+  --gray-color: #ddd;
+  --primary-color: #ffc120;
+  --secundary-color: #0D99FF;
+  --shadow-color: #00000055;
+  --white-color: #fefefe;
+  --transition-mode: all .4s ease-in-out;
+}
+
+body {
+  background-color: var(--back-color);
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.app-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
