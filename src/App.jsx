@@ -1,13 +1,15 @@
 import './app.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Header from './components/Header'
+import Home from './components/Home'
+import Footer from './components/Footer'
+import AboutMe from './components/AboutMe'
 
 export default function App() {
   return (
     <>
-      <Navbar />
       <Header />
+      <Home />
+      <AboutMe />
       <Footer />
     </>
   )

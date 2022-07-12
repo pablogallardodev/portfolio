@@ -1,0 +1,7 @@
+.about {
+  background-color: var(--white-color);
+}
+
+.about h1 {
+  margin-bottom: 1rem;
+}

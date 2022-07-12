@@ -1,12 +1,13 @@
 :root {
-  --back-color: #f1f5f9;
+  --back-color: #ecfdf5;
   --black-color: #111;
   --gray-color: #ddd;
   --primary-color: #ffc120;
   --secundary-color: #0D99FF;
   --shadow-color: #00000055;
-  --white-color: #fefefe;
-  --transition-mode: all .4s ease-in-out;
+  --white-color: #fff;
+  --transition-mode: all .2s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,4 +34,10 @@ code {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .app-center {
+    margin: 0 1rem;
+  }
 }
