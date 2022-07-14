@@ -1,17 +1,16 @@
 :root {
-  --back-color: #ecfdf5;
+  --back-color: #dcfdf5;
   --black-color: #111;
   --gray-color: #ddd;
   --primary-color: #ffc120;
-  --secundary-color: #0D99FF;
-  --shadow-color: #00000055;
+  --secondary-color: #0D99FF;
+  --shadow-color: #00000015;
   --white-color: #fff;
   --transition-mode: all .2s ease-in-out;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--back-color);
   margin: 0;
   font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

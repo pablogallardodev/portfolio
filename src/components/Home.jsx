@@ -1,27 +1,22 @@
-import Profile from '../picture/profile.png'
-import github from '../picture/github.png'
-import instagram from '../picture/instagram.png'
-import twitch from '../picture/twitch.png'
-import youtube from '../picture/youtube.png'
+import Profile from '../img/profile.png'
+import github from '../img/icons/github.png'
+import instagram from '../img/icons/instagram.png'
+import twitch from '../img/icons/twitch.png'
+import youtube from '../img/icons/youtube.png'
+
+import reactSvg from '../img/icons/react.svg'
+import cssSvg from '../img/icons/css.svg'
+import gitSvg from '../img/icons/git.svg'
+import githubSvg from '../img/icons/github.svg'
+import htmlSvg from '../img/icons/html.svg'
+import jsSvg from '../img/icons/js.svg'
+
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
   return <>
-    <ul className={styles.circles}>
-      {
-        Array.from({ length: 30 }).map((el, index) => {
-          const size = Math.floor(Math.random() * (50 - 20) + 20);
-          const position = Math.floor(Math.random() * 90);
-          const animationDelay = Math.floor(Math.random() * 15);
-          const animationDuration = Math.floor(Math.random() * (40 - 10) + 10);
-
-          return <li style={{ left: `${position}%`, width: `${size}px`, height: `${size}px`, animationDelay: `${animationDelay}s`, animationDuration: `${animationDuration}s` }} key={index}></li>
-        })
-      }
-    </ul>
-
     <div className={styles.home}>
-      <div>
+      <div className={styles.left}>
         <h1>Hola!!! 👋, yo soy</h1>
         <h1 className={styles.name}>Pablo Gallardo</h1>
         <h2 className={styles.title}>Front-end Developer</h2>
@@ -33,8 +28,21 @@ const Home = () => {
           <a href="https://www.twitch.tv/pablogallardodev" target="blank"><img src={twitch} alt="Pablo Gallardo" /></a>
         </div>
       </div>
-      <div>
+      <div className={styles.right}>
         <img src={Profile} alt="Pablo Gallardo" />
+
+        {
+          Array.from({ length: 10 }).map((el, index) => {
+            const arraySVG = [reactSvg, htmlSvg, cssSvg, jsSvg, gitSvg, githubSvg]
+            const icon = arraySVG[Math.floor(Math.random() * arraySVG.length)]
+            const left = Math.floor(Math.random() * (95 - 65) + 65);
+            const animationDelay = Math.floor(Math.random() * 15);
+            const animationDuration = Math.floor(Math.random() * (20 - 10) + 10);
+
+            return <img className={styles.svg} src={icon} style={{ left: `${left}%`, animationDelay: `${animationDelay}s`, animationDuration: `${animationDuration}s` }} key={index}></img>
+          })
+        }
+
       </div>      
     </div>
   </>
