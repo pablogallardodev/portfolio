@@ -22,20 +22,21 @@ const Home = () => {
       <div className={styles.left}>
 
         <h1 className={styles.presentation}>
-          Hola!!! 👋, yo soy <br />
+          Hola!!! <span>👋</span>, yo soy <br />
           <strong>Pablo Gallardo</strong> <br/>
           (Front-End Developer)
         </h1>
         
-        <p className={styles.description}>Ingeniero en Sistemas Computacionales 👨‍🎓, apasionado por ser desarrollador, aprender y aplicar nuevas tecnologías. Actualmente soy desarrollador Front-End 💻 🖱 para una consultora. Un hobby es poder compartir mis conocimientos 📹 📺, para que los demás puedan aprender más. Por último, pero no menos importante soy de México. 🌮 🌮</p>
+        <p className={styles.description}>Soy Mexicano🌮e Ingeniero en Sistemas Computacionales.👨‍🎓Conocí el mundo del desarrollo por coincidencia, en la preparatoria, pero desde entonces le agradezco, a mí yo del pasado, por esa decisión👏. Actualmente soy desarrollador Front-End con React JS💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
 
-        <button className={styles.cv}>Donwload CV</button>
+        <button className={styles.cv}>Descargar CV, para saber más</button>
 
         <div className={styles.redes}>
-          <a href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></a>
-          <a href="https://www.youtube.com/channel/UCS-YoU7f8PztGHBd4OD9RSw" target="blank"><img src={youtube} alt="Pablo Gallardo" /></a>
+          <h1>Sígueme en:</h1>
+          <a href="https://www.youtube.com/c/PabloGallardoDev" target="blank"><img src={youtube} alt="Pablo Gallardo" /></a>
           <a href="https://www.instagram.com/pablogallardodev" target="blank"><img src={instagram} alt="Pablo Gallardo" /></a>
           <a href="https://www.twitch.tv/pablogallardodev" target="blank"><img src={twitch} alt="Pablo Gallardo" /></a>
+          <a href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></a>
         </div>
       </div>
       <div className={styles.right}>

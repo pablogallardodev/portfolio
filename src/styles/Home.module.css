@@ -28,8 +28,9 @@
 }
 
 .description {
+  font-size: 18px;
+  font-weight: 300;
   margin-bottom: 2rem;
-  text-align: justify;
   width: 90%;
 }
 
@@ -43,8 +44,16 @@
   font-size: 1.2rem;
   font-weight: 300;
   padding: .5rem 1rem;
-  margin: .5rem 0;
+  margin-bottom: 2rem;
   transition: var(--transition-mode);
+}
+
+.redes {
+  display: flex;
+}
+
+.redes h1 {
+  margin-right: .5rem;
 }
 
 .redes img {
@@ -55,11 +64,11 @@
 }
 
 .redes img:hover, .cv:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .right {
-  background-color: var(--back-color);
+  background-color: var(--primary-color);
   border-radius: 1rem;
   box-shadow: 0 0 1rem var(--shadow-color);
   flex: .4;
@@ -92,7 +101,7 @@
       opacity: .5;
   }
   100%{
-      transform: translateY(90vh);
+      transform: translateY(80vh);
       opacity: 0;
   }
 }
