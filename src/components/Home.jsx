@@ -27,7 +27,7 @@ const Home = () => {
           (Front-End Developer)
         </h1>
         
-        <p className={styles.description}>Soy Mexicano🌮e Ingeniero en Sistemas Computacionales.👨‍🎓Conocí el mundo del desarrollo por coincidencia, en la preparatoria, pero desde entonces le agradezco, a mí yo del pasado, por esa decisión👏. Actualmente soy desarrollador Front-End con React JS💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
+        <p className={styles.description}>Soy un <strong>Mexicano🌮 Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Conocí el mundo del desarrollo por coincidencia pero desde entonces le agradezco👏, a mí yo del pasado.<br/>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
 
         <button className={styles.cv}>Descargar CV, para saber más</button>
 

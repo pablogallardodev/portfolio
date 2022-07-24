@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   min-height: 100vh;
+  padding-top: 1.5rem;
 }
 
 .left, .right {
@@ -28,10 +29,11 @@
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   margin-bottom: 2rem;
-  width: 90%;
+  text-align: justify;
+  width: 95%;
 }
 
 .cv {
@@ -98,10 +100,45 @@
     opacity: 0;
   }
   50%{
-      opacity: .5;
+    opacity: .5;
   }
   100%{
-      transform: translateY(80vh);
+    transform: translateY(80vh);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+    margin-top: 3.5rem;
+  }
+
+  .right {
+    width: 100%;
+    min-height: 40vh;
+    margin-bottom: 1rem;
+  }
+
+  .profile { width: 250px; }
+
+  .svg { width: 2rem; }
+
+  .left { align-items: center; }
+
+  .presentation { text-align: center; }
+
+  @keyframes animate {
+    0%{
+      transform: translateY(0);
       opacity: 0;
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      transform: translateY(30vh);
+      opacity: 0;
+    }
   }
 }
