@@ -1,12 +1,11 @@
 :root {
-  --back-color: #dcfdf5;
+  --back-color: #dcfdf599;
   --black-color: #111;
   --gray-color: #ddd;
   --primary-color: #ffc120;
   --secondary-color: #0D99FF;
-  --shadow-color: #00000015;
+  --shadow-color: #00000030;
   --white-color: #fff;
-  --transition-mode: all .2s ease-in-out;
   scroll-behavior: smooth;
 }
 
@@ -17,6 +16,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--back-color);
 }
 
 code {

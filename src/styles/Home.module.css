@@ -2,7 +2,6 @@
   align-items: center;
   display: flex;
   min-height: 100vh;
-  padding-top: 1.5rem;
 }
 
 .left, .right {
@@ -19,19 +18,25 @@
 
 .presentation {
   font-size: 2.5rem;
-  line-height: 3rem;
-  margin-bottom: 2rem;
+  line-height: 2.5rem;
 }
 
-.presentation strong {
+.name {
   color: var(--primary-color);
   font-size: 3rem;
+  line-height: 3rem;
+}
+
+.job {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .description {
   font-size: 16px;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   text-align: justify;
   width: 95%;
 }
@@ -47,7 +52,6 @@
   font-weight: 300;
   padding: .5rem 1rem;
   margin-bottom: 2rem;
-  transition: var(--transition-mode);
 }
 
 .redes {
@@ -62,11 +66,6 @@
   margin-right: .7rem;
   border-radius: .5rem;
   padding: .1rem;
-  transition: var(--transition-mode);
-}
-
-.redes img:hover, .cv:hover {
-  transform: scale(1.1);
 }
 
 .right {
@@ -74,7 +73,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 1rem var(--shadow-color);
   flex: .4;
-  min-height: 90vh;
+  min-height: 85vh;
   position: relative;
   z-index: 0;
 }
@@ -103,7 +102,7 @@
     opacity: .5;
   }
   100%{
-    transform: translateY(80vh);
+    transform: translateY(75vh);
     opacity: 0;
   }
 }
@@ -126,7 +125,7 @@
 
   .left { align-items: center; }
 
-  .presentation { text-align: center; }
+  .presentation, .name, .job { text-align: center; }
 
   @keyframes animate {
     0%{

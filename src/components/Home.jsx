@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 import Profile from '../img/profile.png'
 import github from '../img/icons/github.png'
 import instagram from '../img/icons/instagram.png'
@@ -18,25 +20,23 @@ const Home = () => {
   const arraySVG = [reactSvg, htmlSvg, cssSvg, jsSvg, gitSvg, githubSvg, reactSvg, htmlSvg, cssSvg, jsSvg, gitSvg, githubSvg]
 
   return <>
-    <div className={`${styles.home} app-center`}>
+    <motion.div animate={{ opacity: [0,1] }} transition={{ delay: 0.2, duration: 1 }} className={`${styles.home} app-center`}>
       <div className={styles.left}>
 
-        <h1 className={styles.presentation}>
-          Hola!!! <span>👋</span>, yo soy <br />
-          <strong>Pablo Gallardo</strong> <br/>
-          (Front-End Developer)
-        </h1>
+        <h1 className={styles.presentation}>Hola!!! <span>👋</span>, yo soy</h1>
+        <motion.h2 animate={{ y: [-300, 10, -10, 0] }} transition={{ delay: 0.8, duration: 1.5, type: 'spring' }} className={styles.name}>Pablo Gallardo</motion.h2>
+        <span className={styles.job}>(Front-End Developer)</span>
         
         <p className={styles.description}>Soy un <strong>Mexicano🌮 Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Conocí el mundo del desarrollo por coincidencia pero desde entonces le agradezco👏, a mí yo del pasado.<br/>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
 
-        <button className={styles.cv}>Descargar CV, para saber más</button>
+        <motion.button whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} className={styles.cv}> Descargar CV, para saber más </motion.button>
 
         <div className={styles.redes}>
           <h1>Sígueme en:</h1>
-          <a href="https://www.youtube.com/c/PabloGallardoDev" target="blank"><img src={youtube} alt="Pablo Gallardo" /></a>
-          <a href="https://www.instagram.com/pablogallardodev" target="blank"><img src={instagram} alt="Pablo Gallardo" /></a>
-          <a href="https://www.twitch.tv/pablogallardodev" target="blank"><img src={twitch} alt="Pablo Gallardo" /></a>
-          <a href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></a>
+          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.youtube.com/c/PabloGallardoDev" target="blank"><img src={youtube} alt="Pablo Gallardo" /></motion.a>
+          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.instagram.com/pablogallardodev" target="blank"><img src={instagram} alt="Pablo Gallardo" /></motion.a>
+          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.twitch.tv/pablogallardodev" target="blank"><img src={twitch} alt="Pablo Gallardo" /></motion.a>
+          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></motion.a>
         </div>
       </div>
       <div className={styles.right}>
@@ -51,8 +51,8 @@ const Home = () => {
         }
         <img className={styles.profile} src={Profile} alt="Pablo Gallardo" />
 
-      </div>      
-    </div>
+      </div>
+    </motion.div>
   </>
 }
 
