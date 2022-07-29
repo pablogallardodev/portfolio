@@ -29,7 +29,7 @@ const Home = () => {
         
         <p className={styles.description}>Soy un <strong>Mexicano🌮 Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Conocí el mundo del desarrollo por coincidencia pero desde entonces le agradezco👏, a mí yo del pasado.<br/>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
 
-        <motion.button whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} className={styles.cv}> Descargar CV, para saber más </motion.button>
+        <motion.button whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} className={styles.cv}> Descargar CV, para saber más </motion.button>
 
         <div className={styles.redes}>
           <h1>Sígueme en:</h1>
@@ -44,7 +44,7 @@ const Home = () => {
           arraySVG.map((icon, index) => {
             const left = Math.floor(Math.random() * (90 - 10) + 10);
             const animationDelay = Math.floor(Math.random() * 15);
-            const animationDuration = Math.floor(Math.random() * (30 - 15) + 15);
+            const animationDuration = Math.floor(Math.random() * (15 - 10) + 10);
             
             return <img className={styles.svg} src={icon} style={{ left: `${left}%`, animationDelay: `${animationDelay}s`, animationDuration: `${animationDuration}s` }} key={index}></img>
           })

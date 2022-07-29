@@ -19,18 +19,12 @@
 }
 
 .menu a {
-  background-color: var(--white-color);
+  background-color: var(--secondary-color);
   border-radius: 1rem;
   box-shadow: 0 0 .5rem var(--shadow-color);
-  color: var(--black-color);
+  color: var(--white-color);
   cursor: pointer;
   margin: 0 .5rem;
   padding: .5rem 1rem;
   text-decoration: none;
-}
-
-.menu a:hover {
-  border: 1px solid var(--secondary-color);
-  background-color: var(--secondary-color);
-  color: var(--white-color);
 }

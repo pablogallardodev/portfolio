@@ -8,9 +8,9 @@ const Header = () => {
       <div className={`${styles.content} app-center`}>
         <img src={logo} alt="Pablo Gallardo" width="70" />
         <div className={styles.menu}>
-          <motion.a whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="#home">Yo</motion.a>
-          <motion.a whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="#projects">Proyectos</motion.a>
-          <motion.a whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="#contact">Contacto</motion.a>
+          <motion.a whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} href="#home">Yo</motion.a>
+          <motion.a whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} href="#projects">Proyectos</motion.a>
+          <motion.a whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} href="#contact">Contacto</motion.a>
         </div>
       </div>
     </motion.nav>
