@@ -1,29 +1,39 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 1rem;
 }
 
 .project {
-  background-color: var(--white-color);
-  border: 1px solid #eee;
-  border-radius: 1rem;
-  cursor: pointer;
-  padding: .5rem;
   margin: .5rem;
+  max-width: 30%;
+  position: relative;
+  text-align: center;
+}
+
+.project .imgProject{
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem var(--shadow-color);
+  width: 100%;
 }
 
 .links {
   display: flex;
-  justify-content: flex-end;
+  margin: 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .links a {
-  color: var(--black-color);
   background-color: var(--primary-color);
   border-radius: .3rem;
-  margin: 0 .3rem;
-  padding: .2rem .5rem;
+  box-shadow: 0 0 .5rem var(--shadow-color);
+  display: grid;
+  margin: 0 .2rem;
+  padding: .2rem;
+  place-items: center;
   text-decoration: none;
 }
 
@@ -40,8 +50,49 @@
 
 .viewProject > div {
   background-color: var(--white-color);
-  border: 1px solid #eee;
-  border-radius: 1rem;
+  border-radius: .5rem;
   width: 50%;
+  position: relative;
+}
+
+.viewProject > div > .links{
+  bottom: 0;
+  top: unset;
+}
+
+.head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   padding: .5rem;
+}
+
+.head button {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 .5rem var(--shadow-color);
+  color: var(--white-color);
+  cursor: pointer;
+  display: grid;
+  height: 1.5rem;
+  padding: .2rem;
+  place-items: center;
+  width: 1.5rem;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 300;
+  margin: .5rem 0;
+  text-align: justify;
+  padding: .5rem;
+}
+
+.viewProject .imgProject {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  margin-bottom: -6px;
+  height: auto;
+  width: 100%;
 }

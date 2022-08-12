@@ -1,0 +1,15 @@
+.videos {
+ overflow-y: hidden;
+ overflow-x: scroll;
+ white-space: nowrap;
+ margin-top: 1rem;
+}
+
+.videos a {
+  background-color: var(--white-color);
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: .5rem;
+  margin: .5rem;
+}

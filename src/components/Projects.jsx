@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import github from '../img/icons/github.svg'
+import chrome from '../img/icons/googlechrome.svg'
+import facejoin from '../img/pages/facejoin.svg'
+import inventory from '../img/pages/inventory.svg'
+import watchingweather from '../img/pages/watchingweather.svg'
 import styles from '../styles/Project.module.css'
 
 const Projects = () => {
@@ -10,21 +15,24 @@ const Projects = () => {
       name: 'Watching-weather',
       description: 'Aplicacion mobile onli, en la cuál podemos tener información sobre el clima de una locación en base a nuestra ubicación o podemos buscar cualquiera, para tener acceso a la misma hay que primero iniciar sesión con una cuenta de Github.',
       deployUrl: 'https://watching-weather.vercel.app/',
-      repoUrl: 'https://github.com/pablogallardodev/watching-weather'
+      repoUrl: 'https://github.com/pablogallardodev/watching-weather',
+      img: watchingweather
     },
     {
       id: 2,
       name: 'Inventory',
       description: 'Web app para el control de inventario, en donde puedes logearte con google o github, una vez iniciada la sesión puedes crear, editar o eliminar los productos existentes, así como modificar sus stocks actuales realizando movimientos de entradas o salidas.',
       deployUrl: 'https://inventory-one-liart.vercel.app/',
-      repoUrl: 'https://github.com/pablogallardodev/inventory'
+      repoUrl: 'https://github.com/pablogallardodev/inventory',
+      img: inventory
     },
     {
       id: 3,
       name: 'Face-join',
       description: 'Google Meet clone, es una aplicacion en la que puedes crear videollamadas y unir a mas personas con el simple nombre de la sala, es un app muy simple de utilizar.',
       deployUrl: 'https://face-join.vercel.app/',
-      repoUrl: 'https://github.com/pablogallardodev/face-join'
+      repoUrl: 'https://github.com/pablogallardodev/face-join',
+      img: facejoin
     }
   ]
   const [selectProject, setSelectProject] = useState(null)
@@ -35,13 +43,13 @@ const Projects = () => {
       <div className={styles.projects}>
         {
           projects.map(project => (
-            <motion.div whileHover={{scale: 1.05}} key={project.id} layoutId={project.id} className={styles.project} onClick={() => setSelectProject(project)}>
+            <motion.div whileHover={{ scale: 1.05 }} key={project.id} layoutId={project.id} className={styles.project}>
+              <img className={styles.imgProject} src={project.img} alt="project img" onClick={() => setSelectProject(project)}/>
               <h2>{project.name}</h2>
-              <img src="https://via.placeholder.com/350x150" alt="project img" />
               <div className={styles.links}>
-                <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">CODIGO</a>
-                <a href={project.deployUrl} target="_blank" rel="noopener noreferrer">VISITAR</a>
-              </div>
+                <motion.a whileTap={{ scale: 0.9 }} href={project.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={project.name} width={25}/></motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} href={project.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={project.name} width={25}/></motion.a>
+              </div>              
             </motion.div>
           ))
         }
@@ -51,12 +59,15 @@ const Projects = () => {
         {selectProject && (
           <motion.div animate={{ opacity: [0,1] }} layoutId={selectProject.id} className={styles.viewProject}>
             <motion.div>
-              <h2>{selectProject.name}</h2>
-              <p>{selectProject.description}</p>
-              <motion.button onClick={() => setSelectProject(null)} style={{ width: 50, height: 25 }}/>
+              <div className={styles.head}>
+                <h2>{selectProject.name}</h2>
+                <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectProject(null)}><p>X</p></motion.button>
+              </div>
+              <p className={styles.description}>{selectProject.description}</p>
+              <img className={styles.imgProject} src={selectProject.img} alt="project img"/>
               <div className={styles.links}>
-                <a href={selectProject.repoUrl} target="_blank" rel="noopener noreferrer">CODIGO</a>
-                <a href={selectProject.deployUrl} target="_blank" rel="noopener noreferrer">VISITAR</a>
+                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={selectProject.name} width={25}/></motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={selectProject.name} width={25}/></motion.a>
               </div>
             </motion.div>
           </motion.div>
