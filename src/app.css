@@ -35,6 +35,15 @@ code {
   padding: 0.5rem;
 }
 
+.containerSection {
+  margin-top: 3.5rem;
+}
+
+.titleSection {
+  border-left: .5rem solid var(--primary-color);
+  padding-left: .3rem;
+}
+
 @media (max-width: 1200px) {
   .app-center {
     margin: 0 1rem;

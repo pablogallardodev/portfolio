@@ -1,0 +1,47 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project {
+  background-color: var(--white-color);
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links a {
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  border-radius: .3rem;
+  margin: 0 .3rem;
+  padding: .2rem .5rem;
+  text-decoration: none;
+}
+
+.viewProject {
+  background-color: var(--shadow-color);
+  display: grid;
+  height: 100%;
+  left: 0;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.viewProject > div {
+  background-color: var(--white-color);
+  border: 1px solid #eee;
+  border-radius: 1rem;
+  width: 50%;
+  padding: .5rem;
+}

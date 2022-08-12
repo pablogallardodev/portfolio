@@ -1,23 +1,22 @@
 import { motion } from 'framer-motion'
 
-import Profile from '../img/profile.png'
-import github from '../img/icons/github.png'
+import profile from '../img/profile.png'
 import instagram from '../img/icons/instagram.png'
 import twitch from '../img/icons/twitch.png'
 import youtube from '../img/icons/youtube.png'
-import reactSvg from '../img/icons/react.svg'
-import cssSvg from '../img/icons/css.svg'
-import gitSvg from '../img/icons/git.svg'
-import githubSvg from '../img/icons/github.svg'
-import htmlSvg from '../img/icons/html.svg'
-import jsSvg from '../img/icons/js.svg'
+import github from '../img/icons/github.svg'
+import react from '../img/icons/react.svg'
+import css from '../img/icons/css.svg'
+import git from '../img/icons/git.svg'
+import html from '../img/icons/html.svg'
+import js from '../img/icons/js.svg'
 
 import styles from '../styles/Home.module.css'
 
 
 const Home = () => {
   
-  const arraySVG = [reactSvg, htmlSvg, cssSvg, jsSvg, gitSvg, githubSvg, reactSvg, htmlSvg, cssSvg, jsSvg, gitSvg, githubSvg]
+  const arraySVG = [react, html, css, js, git, github, react, html, css, js, git, github]
 
   return <>
     <motion.div animate={{ opacity: [0,1] }} transition={{ delay: 0.2, duration: 1 }} className={`${styles.home} app-center`}>
@@ -49,7 +48,8 @@ const Home = () => {
             return <img className={styles.svg} src={icon} style={{ left: `${left}%`, animationDelay: `${animationDelay}s`, animationDuration: `${animationDuration}s` }} key={index}></img>
           })
         }
-        <img className={styles.profile} src={Profile} alt="Pablo Gallardo" />
+        <img className={styles.profile} src={profile
+      } alt="Pablo Gallardo" />
 
       </div>
     </motion.div>

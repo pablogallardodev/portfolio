@@ -55,17 +55,14 @@
 }
 
 .redes {
+  align-items: center;
   display: flex;
 }
 
-.redes h1 {
-  margin-right: .5rem;
-}
-
 .redes img {
-  margin-right: .7rem;
-  border-radius: .5rem;
-  padding: .1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 .5rem;
 }
 
 .right {
@@ -126,6 +123,8 @@
   .left { align-items: center; }
 
   .presentation, .name, .job { text-align: center; }
+
+  .redes { width: 100%; }
 
   @keyframes animate {
     0%{
