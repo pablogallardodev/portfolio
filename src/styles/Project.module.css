@@ -68,16 +68,10 @@
 }
 
 .head button {
-  background-color: var(--secondary-color);
+  background-color: transparent;
   border: none;
-  border-radius: 50%;
-  box-shadow: 0 0 .5rem var(--shadow-color);
-  color: var(--white-color);
   cursor: pointer;
-  display: grid;
   height: 1.5rem;
-  padding: .2rem;
-  place-items: center;
   width: 1.5rem;
 }
 

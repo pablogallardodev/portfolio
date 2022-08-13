@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import github from '../img/icons/github.svg'
 import chrome from '../img/icons/googlechrome.svg'
+import xmark from '../img/icons/xmark.svg'
 import facejoin from '../img/pages/facejoin.svg'
 import inventory from '../img/pages/inventory.svg'
 import watchingweather from '../img/pages/watchingweather.svg'
@@ -61,7 +62,7 @@ const Projects = () => {
             <motion.div>
               <div className={styles.head}>
                 <h2>{selectProject.name}</h2>
-                <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectProject(null)}><p>X</p></motion.button>
+                <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectProject(null)}><img src={xmark} alt="Close modal"/></motion.button>
               </div>
               <p className={styles.description}>{selectProject.description}</p>
               <img className={styles.imgProject} src={selectProject.img} alt="project img"/>
