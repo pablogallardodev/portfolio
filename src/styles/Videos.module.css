@@ -1,15 +1,36 @@
-.videos {
- overflow-y: hidden;
- overflow-x: scroll;
- white-space: nowrap;
- margin-top: 1rem;
+.subTitle, .descripcion {
+  margin-top: 1rem;
 }
 
-.videos a {
-  background-color: var(--white-color);
-  border: 1px solid #eee;
-  border-radius: 1rem;
+.videos {
+  display: flex;
+  margin-top: .5rem;
+}
+
+.video {
+  border-radius: .5rem;
+  color: black;
   cursor: pointer;
+  flex: 1;
+  margin-left: -.5rem;
+  margin-right: 1.5rem;
   padding: .5rem;
-  margin: .5rem;
+  transition: all ease .4s;
+  text-decoration: none;
+}
+
+.video > img {
+  border-radius: .5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.video > p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.video:hover {
+  scale: 1.05;
+  background-color: var(--gray-color);
 }

@@ -1,5 +1,5 @@
 .nav {
-  backdrop-filter: blur(2px);
+  background-color: var(--white-color);
   padding: .2rem 0;
   position: fixed;
   top: 0;
@@ -20,7 +20,7 @@
 
 .menu a {
   background-color: var(--secondary-color);
-  border-radius: 1rem;
+  border-radius: .5rem;
   box-shadow: 0 0 .5rem var(--shadow-color);
   color: var(--white-color);
   cursor: pointer;

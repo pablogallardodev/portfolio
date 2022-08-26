@@ -1,0 +1,21 @@
+.footer {
+  align-items: center;
+  background-color: var(--primary-color);
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.footer a {
+  color: var(--black-color);
+  font-size: 1.2rem;
+  margin: 0 .5rem;
+  transition: all ease .1s;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  scale: 1.07;
+}

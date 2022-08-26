@@ -26,16 +26,17 @@ const Home = () => {
         <motion.h2 animate={{ y: [-300, 10, -10, 0] }} transition={{ delay: 0.8, duration: 1.5, type: 'spring' }} className={styles.name}>Pablo Gallardo</motion.h2>
         <span className={styles.job}>(Front-End Developer)</span>
         
-        <p className={styles.description}>Soy un <strong>Mexicano🌮 Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Conocí el mundo del desarrollo por coincidencia pero desde entonces le agradezco👏, a mí yo del pasado.<br/>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, me gusta mucho aprender cosas nuevas y mantenerme actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
+        <p className={styles.description}>Soy <strong>Mexicano🌮 e Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Me gustaría especializarme en tecnologías web, por lo que me encuentro aprendiendo todo lo relacionado con <strong>JavaScript</strong>, así como la creación de <strong>API</strong>.</p>
+        <p className={styles.description}>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, mi reto personal es aprender cosas nuevas y mantenerme siempre actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
 
         <motion.button whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} className={styles.cv}> Descargar CV, para saber más </motion.button>
 
         <div className={styles.redes}>
           <h1>Sígueme en:</h1>
+          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></motion.a>
           <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.youtube.com/c/PabloGallardoDev" target="blank"><img src={youtube} alt="Pablo Gallardo" /></motion.a>
           <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.instagram.com/pablogallardodev" target="blank"><img src={instagram} alt="Pablo Gallardo" /></motion.a>
           <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://www.twitch.tv/pablogallardodev" target="blank"><img src={twitch} alt="Pablo Gallardo" /></motion.a>
-          <motion.a  whileTap={{ scale: 0.9 }} whileHover={{scale: 1.1}} href="https://github.com/pablogallardodev" target="blank"><img src={github} alt="Pablo Gallardo" /></motion.a>
         </div>
       </div>
       <div className={styles.right}>

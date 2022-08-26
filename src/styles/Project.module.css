@@ -1,20 +1,22 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 1rem;
 }
 
 .project {
-  margin: .5rem;
+  cursor: pointer;
   max-width: 30%;
+  margin-left: -.5rem;
+  margin-right: 1.5rem;
+  padding: .5rem;
   position: relative;
   text-align: center;
 }
 
 .project .imgProject{
   border-radius: .5rem;
-  box-shadow: 0 0 1rem var(--shadow-color);
+  box-shadow: 0 0 .5rem var(--shadow-color);
   width: 100%;
 }
 

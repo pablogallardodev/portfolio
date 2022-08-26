@@ -30,7 +30,7 @@ const Projects = () => {
     {
       id: 3,
       name: 'Face-join',
-      description: 'Google Meet clone, es una aplicacion en la que puedes crear videollamadas y unir a mas personas con el simple nombre de la sala, es un app muy simple de utilizar.',
+      description: 'Google Meet clone, es una aplicacion en la que puedes crear videollamadas y unir a mas personas con tan solo ingresar el nombre de la sala, es un app muy simple de utilizar.',
       deployUrl: 'https://face-join.vercel.app/',
       repoUrl: 'https://github.com/pablogallardodev/face-join',
       img: facejoin
@@ -40,7 +40,7 @@ const Projects = () => {
 
   return (
     <div className='containerSection app-center' id='projects'>
-      <h1 className='titleSection'>Projects</h1>
+      <h1 className='titleSection'>Proyectos</h1>
       <div className={styles.projects}>
         {
           projects.map(project => (
