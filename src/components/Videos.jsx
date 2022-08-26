@@ -1,16 +1,10 @@
-import { useState, useEffect } from "react"
 import youtube from '../img/icons/youtube.png'
 import styles from "../styles/Videos.module.css"
-const { VITE_YOUTUBE_APIKEY, VITE_PLAYLIST_ID } = import.meta.env;
+import useVideos from '../hooks/useVideos'
 
 const Videos = () => {
-  const [videos, setVideos] = useState([])
-
-  useEffect(() => {
-    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${VITE_PLAYLIST_ID}&maxResults=5&key=${VITE_YOUTUBE_APIKEY}`)
-    .then((res) => res.json())
-    .then((videos) => setVideos(videos.items))
-  }, [])
+  
+  const { videos, loading } = useVideos()
 
   return (
     <div className='containerSection app-center' id='contact'>
@@ -21,17 +15,12 @@ const Videos = () => {
       <h3 className={styles.subTitle}>Vídeos subidos recientemente</h3>
       <div className={styles.videos}>
       {
-        videos.map(({ snippet }) => {
-          const { title, thumbnails, resourceId } = snippet
-          const { videoId } = resourceId
-          const { medium } = thumbnails
-          return (
-          <a href={`https://youtu.be/${videoId}`} target='_blank' className={styles.video}>
-            <img src={medium.url} alt={title}/>
-            <p>{title}</p>
+        !loading && videos.map((video, index) => (
+          <a href={video.videoUrl} target='_blank' className={styles.video} key={index}>
+            <img src={video.imgUrl} alt={video.title}/>
+            <p>{video.title}</p>
           </a>
-          )
-        })
+        ))
       }
     </div>
     </div>
