@@ -22,8 +22,8 @@ const Home = () => {
     <motion.div animate={{ opacity: [0,1] }} transition={{ delay: 0.2, duration: 1 }} className={`${styles.home} app-center`}>
       <div className={styles.left}>
 
-        <h1 className={styles.presentation}>Hola!!! <span>👋</span>, yo soy</h1>
-        <motion.h2 animate={{ y: [-300, 10, -10, 0] }} transition={{ delay: 0.8, duration: 1.5, type: 'spring' }} className={styles.name}>Pablo Gallardo</motion.h2>
+        <h1 className={styles.presentation}>Hola! <span>👋</span>, soy</h1>
+        <motion.h2 animate={{ y: [-300, 10, -10, 0] }} transition={{ delay: 0.5, duration: 1.5, type: 'spring' }} className={styles.name}>Pablo Gallardo</motion.h2>
         <span className={styles.job}>(Front-End Developer)</span>
         
         <p className={styles.description}>Soy <strong>Mexicano🌮 e Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Me gustaría especializarme en tecnologías web, por lo que me encuentro aprendiendo todo lo relacionado con <strong>JavaScript</strong>, así como la creación de <strong>API</strong>.</p>

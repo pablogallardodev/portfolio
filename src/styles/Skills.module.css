@@ -1,0 +1,19 @@
+.dragArea {
+  align-items: center;
+  background-color: var(--gray-color);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  padding: 2rem .5rem;
+}
+
+.dragArea img {
+  width: 3rem;
+  cursor: move;
+}
+
+.note {
+  display: block;
+  text-align: right;
+}

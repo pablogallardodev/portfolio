@@ -4,7 +4,7 @@ import useVideos from '../hooks/useVideos'
 
 const Videos = () => {
   
-  const { videos, loading } = useVideos()
+  const { videos, loading, popularVideos } = useVideos()
 
   return (
     <div className='containerSection app-center' id='contact'>
@@ -22,7 +22,18 @@ const Videos = () => {
           </a>
         ))
       }
-    </div>
+      </div>
+      <h3 className={styles.subTitle}>Vídeos más populares</h3>
+      <div className={styles.videos}>
+      {
+        !loading && popularVideos.map((video, index) => (
+          <a href={video.videoUrl} target='_blank' className={styles.video} key={index}>
+            <img src={video.imgUrl} alt={video.title}/>
+            <p>{video.title}</p>
+          </a>
+        ))
+      }
+      </div>
     </div>
   )
 }
