@@ -5,15 +5,15 @@
 .videos {
   display: flex;
   margin-top: .5rem;
+  justify-content: space-between;
 }
 
 .video {
   border-radius: .5rem;
   color: black;
   cursor: pointer;
-  flex: 1;
+  max-width: 18%;
   margin-left: -.5rem;
-  margin-right: 1.5rem;
   padding: .5rem;
   transition: all ease .4s;
   text-decoration: none;
