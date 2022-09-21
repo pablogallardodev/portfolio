@@ -56,8 +56,8 @@ const Projects = () => {
               <img className={styles.imgProject} src={project.img} alt="project img" onClick={() => setSelectProject(project)}/>
               <h2>{project.name}</h2>
               <div className={styles.links}>
-                <motion.a whileHover={{ scale: 1.1 }} href={project.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={project.name} width={25}/></motion.a>
-                <motion.a whileHover={{ scale: 1.1 }} href={project.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={project.name} width={25}/></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href={project.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={project.name} width={30}/></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href={project.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={project.name} width={30}/></motion.a>
               </div>              
             </motion.div>
           ))

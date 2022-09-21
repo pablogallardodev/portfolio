@@ -7,7 +7,7 @@ const Videos = () => {
   const { videos, loading, popularVideos } = useVideos()
 
   return (
-    <div className='containerSection app-center' id='contact'>
+    <div className='containerSection app-center'>
       <h1 className='titleSection' style={{display: 'flex', alignItems: 'center'}}>
         <img src={youtube} alt="Pablo Gallardo Dev" />/Pablo Gallardo Dev
       </h1>

@@ -28,6 +28,7 @@ const Home = () => {
         
         <p className={styles.description}>Soy <strong>Mexicano🌮 e Ingeniero en Sistemas Computacionales</strong>.👨‍🎓Me gustaría especializarme en tecnologías web, por lo que me encuentro aprendiendo todo lo relacionado con <strong>JavaScript</strong>, así como la creación de <strong>API</strong>.</p>
         <p className={styles.description}>Actualmente soy <strong>desarrollador Front-End con React JS</strong>💻, mi reto personal es aprender cosas nuevas y mantenerme siempre actualizado. Una manera que uso para seguir aprendiendo es enseñar lo que sé📽️, pero eso lo cuento más adelante.</p>
+        <p className={styles.description}>Ahora me encuentro aprendiendo <strong>TypeScript</strong> para aplicarlo en mis proyectos web.</p>
 
         <motion.button whileTap={{ scale: 0.95 }} whileHover={{scale: 1.05}} className={styles.cv}> Descargar CV, para saber más </motion.button>
 
