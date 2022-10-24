@@ -1,6 +1,7 @@
 .home {
   align-items: center;
   display: flex;
+  margin-top: 1rem;
   min-height: 100vh;
 }
 
