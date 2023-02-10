@@ -14,7 +14,6 @@ import watchingweather from '../img/pages/watchingweather.svg'
 import styles from '../styles/Project.module.css'
 
 const Projects = () => {
-
   const projects = [
     {
       id: 1,
@@ -53,12 +52,12 @@ const Projects = () => {
         {
           projects.map(project => (
             <motion.div whileHover={{ scale: 1.05 }} key={project.id} layoutId={project.id} className={styles.project}>
-              <img className={styles.imgProject} src={project.img} alt="project img" onClick={() => setSelectProject(project)}/>
+              <img className={styles.imgProject} src={project.img} alt='project img' onClick={() => setSelectProject(project)} />
               <h2>{project.name}</h2>
               <div className={styles.links}>
-                <motion.a whileHover={{ scale: 1.1 }} href={project.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={project.name} width={30}/></motion.a>
-                <motion.a whileHover={{ scale: 1.1 }} href={project.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={project.name} width={30}/></motion.a>
-              </div>              
+                <motion.a whileHover={{ scale: 1.1 }} href={project.repoUrl} target='_blank' rel='noopener noreferrer' title='Codigo'><img src={github} alt={project.name} width={30} /></motion.a>
+                <motion.a whileHover={{ scale: 1.1 }} href={project.deployUrl} target='_blank' rel='noopener noreferrer' title='Visitar'><img src={chrome} alt={project.name} width={30} /></motion.a>
+              </div>
             </motion.div>
           ))
         }
@@ -66,21 +65,21 @@ const Projects = () => {
 
       <AnimatePresence>
         {selectProject && (
-          <motion.div animate={{ opacity: [0,1] }} layoutId={selectProject.id} className={styles.viewProject}>
+          <motion.div animate={{ opacity: [0, 1] }} layoutId={selectProject.id} className={styles.viewProject}>
             <motion.div>
               <div className={styles.head}>
                 <h2>{selectProject.name}</h2>
-                <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectProject(null)}><img src={xmark} alt="Close modal"/></motion.button>
+                <motion.button whileTap={{ scale: 0.9 }} onClick={() => setSelectProject(null)}><img src={xmark} alt='Close modal' /></motion.button>
               </div>
               <p className={styles.description}>{selectProject.description}</p>
               <section className={styles.made}>
                 <h3>Realizado con:</h3>
-                { selectProject.made.map((icon, index) => <img src={icon} alt={`${icon}`} width={30} key={index}/>) }
+                {selectProject.made.map((icon, index) => <img src={icon} alt={`${icon}`} width={30} key={index} />)}
               </section>
-              <img className={styles.imgProject} src={selectProject.img} alt="project img"/>
+              <img className={styles.imgProject} src={selectProject.img} alt='project img' />
               <div className={styles.links}>
-                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.repoUrl} target="_blank" rel="noopener noreferrer" title='Codigo'><img src={github} alt={selectProject.name} width={25}/></motion.a>
-                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.deployUrl} target="_blank" rel="noopener noreferrer" title='Visitar'><img src={chrome} alt={selectProject.name} width={25}/></motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.repoUrl} target='_blank' rel='noopener noreferrer' title='Codigo'><img src={github} alt={selectProject.name} width={25} /></motion.a>
+                <motion.a whileTap={{ scale: 0.9 }} href={selectProject.deployUrl} target='_blank' rel='noopener noreferrer' title='Visitar'><img src={chrome} alt={selectProject.name} width={25} /></motion.a>
               </div>
             </motion.div>
           </motion.div>

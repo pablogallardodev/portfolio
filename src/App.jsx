@@ -6,7 +6,7 @@ import Projects from './components/Projects'
 import Videos from './components/Videos'
 import Skills from './components/Skills'
 
-export default function App() {
+export default function App () {
   return (
     <>
       <Header />
