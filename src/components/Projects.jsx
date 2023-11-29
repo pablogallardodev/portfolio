@@ -12,6 +12,7 @@ import facejoin from '../img/pages/facejoin.svg'
 import inventory from '../img/pages/inventory.svg'
 import watchingweather from '../img/pages/watchingweather.svg'
 import styles from '../styles/Project.module.css'
+import { useNotion } from '../hooks/useNotion'
 
 const Projects = () => {
   const projects = [
@@ -44,6 +45,8 @@ const Projects = () => {
     }
   ]
   const [selectProject, setSelectProject] = useState(null)
+
+  useNotion()
 
   return (
     <div className='containerSection app-center' id='projects'>
