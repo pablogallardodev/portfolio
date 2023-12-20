@@ -12,8 +12,8 @@ export const useNotion = async () => {
     }
 
     fetch(
-      `https://api.notion.com/v1/databases/${VITE_NOTION_DATABASE_ID}/query`,
-      {
+      `https://api.notion.com/v1/databases/${VITE_NOTION_DATABASE_ID}/query`, {
+        mode: 'no-cors',
         method: 'POST',
         headers: headersList
       }
