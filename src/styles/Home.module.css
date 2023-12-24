@@ -18,14 +18,14 @@
 }
 
 .presentation {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .name {
   color: var(--primary-color);
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .job {
@@ -33,10 +33,10 @@
   blink .5s infinite step-end alternate;
   border-right: 2px solid;
   display: block;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   overflow: hidden;
   width: 17ch;
   white-space: nowrap;
@@ -66,7 +66,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   padding: .5rem 1rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .redes {
@@ -81,9 +81,6 @@
 }
 
 .right {
-  background-color: var(--primary-color);
-  border-radius: 1rem;
-  box-shadow: 0 0 .5rem var(--shadow-color);
   flex: .4;
   min-height: 85vh;
   position: relative;
@@ -91,6 +88,10 @@
 }
 
 .profile {
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  box-shadow: 0 0 .5rem var(--shadow-color);
+  width: 75%;
   position: absolute;
   z-index: 2;
 }

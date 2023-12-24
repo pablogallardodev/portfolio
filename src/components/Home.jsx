@@ -52,7 +52,6 @@ const Home = () => {
           <img
             className={styles.profile} src={profile} alt='Pablo Gallardo'
           />
-
         </div>
       </motion.div>
     </>
